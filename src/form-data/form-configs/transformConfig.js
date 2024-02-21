@@ -1,3 +1,5 @@
+import { addToClipboard } from 'src/utils';
+
 const action = (columns) => {
   const store = columns
     .split('\n')
@@ -11,7 +13,7 @@ const action = (columns) => {
   const lines = [...store].map(
     ([source, ids]) => `${source}\t${ids.join(', ')}`
   );
-  console.log(lines);
+  addToClipboard(lines);
 };
 
 export const transformConfig = {

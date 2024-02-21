@@ -1,5 +1,6 @@
 import { MAX_LINES } from 'src/configs/appConfig';
 import { useSettingsStore } from 'src/store/saveSettings';
+import { openInNewTab } from 'src/utils';
 
 const param = {
   address: 'https://gomer.rozetka.company/gomer/sellers/attributes/source/',
@@ -52,7 +53,7 @@ const action = (column) => {
     const attributes = settings.getAttributes();
     return `${address}${source}${attributes}`;
   });
-  console.log(links);
+  openInNewTab(links);
 };
 
 export const openSourceAttr = {

@@ -1,6 +1,7 @@
 import { useCheckingStore } from 'src/store/saveSettings';
 import { MAX_GOODS_IN_CONSTRUCT } from 'src/configs/appConfig';
 import { chunk } from 'lodash';
+import { openInNewTab } from 'src/utils';
 const id = {
   addres:
     'https://gomer.rozetka.company/gomer/smart-folders/next-page?searchParams%5Bid%3D1%5D%5Bfield%5D=goods_id&searchParams%5Bid%3D1%5D%5Bcondition%5D=%3D&searchParams%5Bid%3D1%5D%5Bvalue%5D=',
@@ -28,7 +29,7 @@ const action = (column, field) => {
   const links = chunk(lines, MAX_GOODS_IN_CONSTRUCT).map(
     (part) => `${addres}${part.join(' ')}${params}${LOCAL_APP_KEY}${attr}`
   );
-  console.log(links);
+  openInNewTab(links);
 };
 export const findGoodsInCatgoryConfig = {
   buttonColor: 'primary',

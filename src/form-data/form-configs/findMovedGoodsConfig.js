@@ -1,6 +1,7 @@
 import { chunk } from 'lodash';
 import { MAX_GOODS_IN_CONSTRUCT } from 'src/configs/appConfig';
 import { useCheckingStore } from 'src/store/saveSettings';
+import { openInNewTab } from 'src/utils';
 
 const type = {
   id: {
@@ -23,7 +24,7 @@ const action = (column) => {
   const links = chunk(lines, MAX_GOODS_IN_CONSTRUCT).map(
     (part) => `${addres}${part.join(' ')}${params}${LOCAL_APP_KEY}${attr}`
   );
-  console.log(links);
+  openInNewTab(links);
 };
 
 export const findMovedGoodsConfig = {

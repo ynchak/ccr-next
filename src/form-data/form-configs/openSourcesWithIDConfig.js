@@ -1,5 +1,6 @@
 import { chunk } from 'lodash';
 import { MAX_GOODS_IN_SOURCE, MAX_LINES } from 'src/configs/appConfig';
+import { openInNewTab } from 'src/utils';
 
 const url = 'https://gomer.rozetka.company/gomer/items/source/';
 const attr = '?ItemSearch[id]=';
@@ -20,7 +21,7 @@ const action = (data) => {
     ];
   }, []);
 
-  console.log(links);
+  openInNewTab(links);
 };
 
 export const openSourcesWithIDConfig = {

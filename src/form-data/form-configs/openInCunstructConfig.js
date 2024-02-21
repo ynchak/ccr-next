@@ -1,5 +1,6 @@
 import { chunk } from 'lodash';
 import { MAX_GOODS_IN_CONSTRUCT } from 'src/configs/appConfig';
+import { openInNewTab } from 'src/utils';
 const addres = `https://gomer.rozetka.company/gomer/smart-folders/next-page?searchParams[0][field]=goods_id&searchParams[0][condition]=%3D&searchParams[0][value]=`;
 
 const params = {
@@ -13,7 +14,7 @@ const action = (column, type) => {
     (part) => `${addres}${part.join('+')}${params[type]}`
   );
 
-  console.log(links);
+  openInNewTab(links);
 };
 
 export const openInCunstructConfig = {
