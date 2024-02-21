@@ -11,8 +11,8 @@ import { NotFound } from './pages/notfound-page';
 function App() {
   const navigate = useNavigate();
   return (
-    <NextUIProvider navigate={navigate}>
-      <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
+    <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
+      <NextUIProvider navigate={navigate}>
         <Routes>
           <Route path="/" element={<Layout />}>
             <Route index element={<Home />} />
@@ -21,8 +21,8 @@ function App() {
             <Route path="*" element={<NotFound />} />
           </Route>
         </Routes>
-      </ThemeProvider>
-    </NextUIProvider>
+      </NextUIProvider>
+    </ThemeProvider>
   );
 }
 
