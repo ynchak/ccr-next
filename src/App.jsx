@@ -12,7 +12,7 @@ function App() {
   const navigate = useNavigate();
   return (
     <NextUIProvider navigate={navigate}>
-      <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
+      <ThemeProvider defaultTheme="light" storageKey="vite-ui-theme">
         <Routes>
           <Route path="/" element={<Layout />}>
             <Route index element={<Home />} />
