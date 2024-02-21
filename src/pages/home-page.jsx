@@ -1,4 +1,4 @@
-import { Spacer } from '@nextui-org/react';
+import { Divider, Spacer } from '@nextui-org/react';
 import FormArea from 'src/components/form-area';
 import FormSettings from 'src/components/form-settings';
 
@@ -12,6 +12,8 @@ export function Home() {
               Перенесення товарів
             </h2>
             <Spacer y={4} />
+            <Divider />
+            <Spacer y={4} />
             <FormArea name="openSourcesWithIDConfig" />
             <Spacer y={4} />
             <FormArea name="transformConfig" />
@@ -22,6 +24,8 @@ export function Home() {
             <h2 className="text-xl font-medium text-center">
               Оновлення товарів
             </h2>
+            <Spacer y={4} />
+            <Divider />
             <Spacer y={4} />
             <FormArea name="openSourceAttr" />
             <Spacer y={4} />

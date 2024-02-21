@@ -1,4 +1,4 @@
-import { Spacer } from '@nextui-org/react';
+import { Divider, Spacer } from '@nextui-org/react';
 import FormArea from 'src/components/form-area';
 import FormChecking from 'src/components/form-checking';
 
@@ -8,6 +8,8 @@ export function Checking() {
       <div className="container mx-auto">
         <Spacer y={4} />
         <h2 className="text-xl font-medium text-center">Перевірка</h2>
+        <Spacer y={4} />
+        <Divider />
         <Spacer y={4} />
         <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-4">
           <div>
