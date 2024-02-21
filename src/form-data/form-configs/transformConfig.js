@@ -13,7 +13,7 @@ const action = (columns) => {
   const lines = [...store].map(
     ([source, ids]) => `${source}\t${ids.join(', ')}`
   );
-  addToClipboard(lines);
+  addToClipboard(lines.join('\n'));
 };
 
 export const transformConfig = {
