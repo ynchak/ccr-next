@@ -6,10 +6,10 @@ export function Etc() {
       <div className="container mx-auto">
         <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-4">
           <div className="mt-2">
-            <FormArea name="openSourcesWithIDConfig" />
+            <FormArea name="" />
           </div>
           <div className="mt-2">
-            <FormArea name="openSourcesWithIDConfig" />
+            <FormArea name="" />
           </div>
         </div>
       </div>
