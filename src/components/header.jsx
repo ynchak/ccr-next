@@ -7,13 +7,11 @@ import {
 } from '@nextui-org/react';
 import { NavLink } from 'react-router-dom';
 import { ThemeTogle } from './theme-togle';
-import { Logo } from './logo';
 
 export default function Header() {
   return (
     <Navbar isBlurred isBordered>
       <NavbarBrand>
-        <Logo />
         <p className="font-bold text-inherit">CCR</p>
       </NavbarBrand>
       <NavbarContent className="hidden sm:flex gap-4" justify="center">
