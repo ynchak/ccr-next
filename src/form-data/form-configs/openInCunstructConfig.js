@@ -9,6 +9,7 @@ const params = {
 };
 
 const action = (column, type) => {
+  console.log(type);
   const lines = column.split('\n').filter((line) => line !== '');
   const links = chunk(lines, MAX_GOODS_IN_CONSTRUCT).map(
     (part) => `${addres}${part.join('+')}${params[type]}`

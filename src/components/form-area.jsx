@@ -28,6 +28,7 @@ export default function FormArea({ name }) {
 
   const handlerSubmit = (e) => {
     e.preventDefault();
+
     try {
       data.action(areaValue, selectRadio, setCountLines);
     } catch (e) {

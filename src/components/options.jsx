@@ -7,7 +7,7 @@ export default function Options({ defaultValue, values, setSelectRadio }) {
       label=""
       defaultValue={defaultValue}
       orientation="horizontal"
-      onChange={setSelectRadio}
+      onValueChange={(e) => setSelectRadio(e)}
     >
       {values.map(({ type, value }) => (
         <Radio key={type} value={type}>
