@@ -18,7 +18,11 @@ export default function Header() {
           <NavbarItem key={key}>
             <NavLink
               to={link}
-              className={({ isActive }) => (isActive ? 'font-semibold' : '')}
+              className={({ isActive }) =>
+                isActive
+                  ? 'dark:bg-gray-800 bg-gray-200 px-2 py-2 rounded-lg'
+                  : ''
+              }
             >
               {lable}
             </NavLink>
