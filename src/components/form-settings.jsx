@@ -27,7 +27,7 @@ export default function FormSettings() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (!selectValue.has('categoty')) {
+    if (!selectValue.has('category')) {
       setSettingsInputParamValue('');
     }
     setData({
