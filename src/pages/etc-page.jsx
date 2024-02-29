@@ -9,7 +9,7 @@ export function Etc() {
             <FormArea name="getGoodsIdFromUrlConfig" />
           </div>
           <div className="mt-2">
-            <FormArea name="" />
+            <FormArea name="getLinksFromGoodsIdConfig" />
           </div>
         </div>
       </div>

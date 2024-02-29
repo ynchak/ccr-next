@@ -5,6 +5,7 @@ import { openSourceAttr } from './form-configs/openSourceAttrConfig';
 import { findGoodsInCatgoryConfig } from './form-configs/findGoodsInCatgoryConfig';
 import { findMovedGoodsConfig } from './form-configs/findMovedGoodsConfig';
 import { getGoodsIdFromUrlConfig } from './form-configs/getGoodsIDFromURLConfig';
+import { getLinksFromGoodsIdConfig } from './form-configs/getLinksFromGoodsIdConfig';
 
 const dataForForm = {
   openSourcesWithIDConfig,
@@ -14,6 +15,7 @@ const dataForForm = {
   findGoodsInCatgoryConfig,
   findMovedGoodsConfig,
   getGoodsIdFromUrlConfig,
+  getLinksFromGoodsIdConfig,
 };
 export const getFormData = (name) =>
   dataForForm[name] ?? {
